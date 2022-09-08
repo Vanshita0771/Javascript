@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Arrays are the group of elements which starts with index 0
+        //It is considered as objects in javascript
+        //They are mutable means we can change its size
+        //Declaration of arrays
+        let arr=[1,2,3,4];
+        
+        console.log(arr.length);
+        arr[4]=10;
+        console.log(arr.length);
+        //Methods in arrays
+        //toString()--convert array into string
+        let b=arr.toString();//b is now string
+        console.log(b);
+        console.log(typeof b);
+        //join()---join all elements using the separator
+        console.log(arr.join("-"));
+        //pop()---removes the element from the last
+        console.log(arr.pop());
+        //push()---add elements into the array to the last
+        arr.push(12);
+        console.log(arr);
+        //shift()---removes the element from the starting
+        console.log(arr.shift());
+        //unshift()---adds new element to the first position of the array
+        console.log(arr.unshift(111));//returns new arr length
+        console.log(arr);
+        //concat()---merge two or more arrays
+        let a=arr.concat(arr,arr);//doesn't change the original array 
+        console.log(a);
+        //sort()--sorts the original array alphabetically
+        arr.sort();
+        console.log(arr);
+        //if you want to sort in ascending or descending according to numbers
+        let compare=(a,b)=>{
+            return a-b;
+        }
+        arr.sort(compare);//compare return + or - value,if + ,then a and b will be swapped
+        console.log(arr);
+        //reverse()---reverses original array
+        arr.reverse();
+        console.log(arr);
+        //splice()--used to add new items to an array
+        // 1st argument-position to be added
+        // 2nd argument-number elements to be deleted 
+        // 3,4,5,th arguments--new elements to be added
+        arr.splice(2,1,23,34,44,56);
+        console.log(arr);
+        //slice()--slices out the piece of the array.It forms a new array
+        let d=arr.slice(2,4);//from 2nd index to 3rd index
+        console.log(d);
+
+        //Delete Operator--length of the array does not change  
+        delete(arr[0]);
+        console.log(arr);
+
+        //Iterating over the arrays
+        //for loop
+        let array=[1,2,3,4,5,6];
+        for(let i=0;i<array.length;i++) {
+              console.log(array[i]);
+         }
+
+         //forEach loop
+         array.forEach((ele)=>{
+            console.log(ele);
+         })
+        
+        //for of loop
+        for(let i of array){
+            console.log(i);
+        }
+
+        //for in loops--mainly used for objects having key-value pair
+        for(let i in array){
+            console.log(array[i]);
+        }
+
+        //for from---used to create from other object
+        array=Array.from("VANSHITA");
+        console.log(array);
+
+    
+    //Map--It is similiar to forEach loop but it is also used to create a new array .
+     let ele=[11,12,13,14,15];
+     let m=ele.map((val)=>{
+        return val+1;
+     })
+     console.log(m);
+
+     //Filter---It creates an new array from existing array if it passes the condition
+     let f=ele.filter((val)=>{
+        return val>12;
+     });
+     console.log(f);
+     
+     //Reduce---It reduces the array into single value but doesn't alter the original array
+     let r=ele.reduce((val1,val2)=>{
+        return val1*val2;
+     });
+     console.log(r);
+    </script>
+</body>
+</html>

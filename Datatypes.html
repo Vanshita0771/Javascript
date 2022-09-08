@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //There are 7 types of primitive datatypes.They are predefined.
+        //Size depends on type on data structure
+        //nn bb ss u
+        var a=null;//null is considered as object
+        var b=12;
+        var c=false;
+        var d=BigInt(23);
+        var e="Vanshita";
+        var f=Symbol("Hello World");
+        var g=undefined;
+        console.log(a,b,c,d,e,f,g);
+        console.log(typeof a);
+        console.log(typeof b);
+        console.log(typeof g);
+        var h=d+BigInt(9);
+        console.log(h);
+        //Non-Primitive data types are user-defined data types.Size are not fixed.
+
+        //Eg-arrays,objects
+        //Objects-Object in Javascript is an entity having properties and methods.Everything
+        // is an object in javascript.
+        var person = {
+        firstName: "Vanshita",
+        lastName: "Kakkar"
+       };
+       console.log(person.firstName);
+       console.log(person["lastName"]);
+       
+       //Arrays-A collection of elements of different datatypes
+       var n=new Array(12,23,233);
+       var arr=[12,23,333];
+       for(var i=0;i<n.length;i++){
+        console.log(n[i]);
+       }
+      //JavaScript does not support two-dimensional arrays. 
+      //but we can do this by creating an array of an array.
+    </script>
+</body>
+</html>

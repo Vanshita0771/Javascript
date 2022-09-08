@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      //Strings are the primitive data-types used to store text and manipulate it
+      //Strings are immutuable means original strings doesn't change
+      //How to declare it
+      var boy1="Prakash";//Using double quotes
+      var boy2='Anil';//Using single quotes
+
+      //Templates Literals uses backtics instead of quotes 
+      var relation=`${boy1} is friend of ${boy2}`;
+      console.log(relation);
+
+      //Escape Sequence Characters
+      relation='Anil\'s friend';
+      console.log(relation);
+      var greet="Hello!\nHow are you?";
+      console.log(greet);
+
+
+      //String methods
+      var boy1="Prakash";
+      var name="   Meenal   ";
+      console.log(boy1.length);
+      console.log(boy1.toUpperCase());
+      console.log(boy1.toLowerCase());
+      console.log(boy1.charAt(2));
+      console.log(boy1.indexOf('r'));
+      console.log(boy1.lastIndexOf('a'));
+      console.log(boy1.concat(boy2));
+      console.log(boy1.substr(2,4));//2-index,4-length of substring
+      console.log(boy1.slice(2,4));//index from 2 to 3
+      console.log(boy1.slice(2));//index from 2 to boy1.length-1
+      console.log(boy1.replace("P","A"));
+      console.log(name.trim());
+    </script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       // Conditionals in Javascript
+      
+        let age=prompt("Enter your age:");//treat the value as string
+        age=Number.parseInt(age);//type conversion-string to number
+        //Single if statement
+        if(age>8){
+           console.log("You are not a kid");
+        }
+    
+       //If-else condition
+        if(age>8){
+         console.log("You are not a kid");
+        }
+        else{
+          console.log("You are  a kid");
+        }
+    
+       //If-else ladder
+         if(age>60){
+          console.log("You are senior citizen");
+         }
+         else if(age>20){
+          console.log("You are adult");
+         }
+         else if(age>15){
+           console.log("You are teenager");
+         }
+        else{
+          console.log("You are  a kid");
+         }
+   
+       // Loops in Javascript
+     
+        //For loop
+        var arr=[1,2,3,4];
+        for(var i=0;i<arr.length;i++){
+          console.log(arr[i]);
+         }
+
+       //For-each
+       arr.forEach(function(element){
+         console.log(element);
+       })
+
+       //While loop->Entry check
+       let j=0;
+       while(j<arr.length){
+        console.log(arr[j++]);
+       }
+    
+       //Do-while loop->Exit check
+       j=0;
+       do{
+        console.log(arr[j++]);
+       }
+       while(j<arr.length);
+      
+       //For in--used for object iteration
+       var person={
+              f_name:"Vanshita",
+              l_name:"Kakkar",
+              rollNo:2010990771
+       }
+       for(let i in person){
+        document.write(person[i]+"<br>");
+       }
+
+      // for of -- used for array iteration
+      //The for of statement loops through the values of any iterable object
+      var a=[1,2,4,5,4,6,78];
+      for(let j of a){
+        document.write(j+"<br>");
+       }
+
+  
+    // Break and Continue Statements
+      
+        //Break->when break is encountered,for loop exits
+        for(var i=0;i<arr.length;i++){
+            console.log(arr[i]);
+            if(i==2)
+             break;
+           }
+   
+        //Continue->Cancels the current iteration and starts next iteration
+        for(var i=0;i<arr.length;i++){
+            if(i==2)
+             continue;
+            console.log(arr[i]);
+           }
+        
+        // Switch statement
+        switch(age){
+            case 1:
+                console.log("You are a baby");
+                break;
+            case 18:
+                console.log("You are adult");
+                break;
+            default:
+                console.log("You are teenager");
+                break;
+        }
+        
+        //Use of ternary operator with condition
+                             //condition ? if  : else
+        console.log("You can", age>18 ? "drive" :"not drive");
+    </script>
+</body>
+</html>
