@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Alert-Used to invoke the mini window with a message
+        alert("Your javascript works fine");
+        //Prompt-Used the take input from the user and treeat the value as string
+        var age=Number.parseInt(prompt("Enter your age"));
+        console.log(age);
+        //Confirm-Shows a msg and waits for the user to press ok or cancel.
+        //Returns true for ok and false for cancel
+        var write=confirm("Do you want write on page?");
+        if(write){
+            console.log("User wants to write on page");
+        }
+        else{
+            console.log("User doesn't want to write on page");
+        }
+    </script>
+</body>
+</html>
