@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*Write a program to print the marks of the student in an object using for loop
+        obj={harry:98,rohan:70;aakash:7}
+        */
+       var marks={harry:98,rohan:70,aakash:7};
+       //Object.keys(marks)=['harry','rohan','aakash'];
+       //It converts  set of keys into arrays
+       for(var i=0;i<Object.keys(marks).length;i++){
+        document.write(Object.keys(marks)[i]+":"+marks[Object.keys(marks)[i]]+"<br>");
+       }
+
+
+       /*Write the program of last program using for in loop*/
+       for(var i in marks){
+        console.log(i+":"+marks[i]);
+       }
+
+       /*Write a program to print "try again" until the user enters the correct numbers*/
+       var cn=4;
+       while(true){
+        let a=prompt("Enter the correct mark");
+        a=Number.parseInt(a);
+        if(cn==a)
+         break;
+       }
+       /* Write a function to find mean of 5 numbers*/
+       var mean=(a,b,c,d,e)=>{
+        return (a+b+c+d+e)/5;
+       }
+       document.write(mean(1,2,3,4,5));
+    </script>
+</body>
+</html>

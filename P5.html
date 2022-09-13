@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*Create an array of numbers and take input from the user to add numbers to the array*/
+        let arr1=[1,2,3,4];
+        let a=Number.parseInt(prompt("Enter the value of a"));
+        let b=Number.parseInt(prompt("Enter the value of b"));
+        arr1.push(a);
+        arr1.push(b);
+        console.log(arr1);
+
+        /*Keep adding numbers to the array in last question until 0 is added to the array*/
+        while(true){
+         let a=Number.parseInt(prompt("Enter the value"));
+         arr1.push(a);
+         if(a==0)
+         {
+             break;
+         }
+        }
+        console.log(arr1);
+
+
+      /*Create an array of square of given numbers*/
+        let arr2=arr1.map((val)=>{
+         return val*val;
+        });
+        console.log(arr2);
+      
+      /*Filter for numbers divisible by 10 from a given array*/
+      let arr3=arr1.filter((val)=>{
+        return val%10==0;
+      });
+      console.log(arr3);
+
+      /*Use reduce to calculate factorial of a given number from the array of first 
+      n natural numbers (n being the number whose factorial needs to be calculated)*/
+
+      let arr4=[1,2,3,4];
+      let m=arr4.reduce((val1,val2)=>{
+        return val1*val2;
+      });
+      console.log(m);
+    </script>
+</body>
+</html>

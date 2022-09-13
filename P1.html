@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*  Write a javascript program to store name,phone number
+             and marks of a student using objects.
+        */
+        var details={
+            name: "Vanshita",
+            phone_no: 6283348955,
+            marks: 90
+        }
+        for(var i in details){
+            document.write(details[i]+"<br>");
+        }
+        /*  Create a variable of type string and try to add a number to it.
+        */
+         var ad='Vanshu';
+         ad+=23;
+         document.write(ad+"<br>");
+         /* Use typeof operator to find the datatype of the string in last question
+          */
+         document.write(typeof ad+"<br>");
+         /* Create a constant object in javascript.Can you change it to hold a number
+          later?
+        */
+         const person={
+                  f_name:"Vanshu"
+                 }
+         /*  person=90;
+           Generate error */
+
+        /*Try to add a new key to the const object in last question were you able to do it?
+       */
+        person["l_name"]="Kakkar";
+        document.write(person.l_name+"<br>");
+
+        /*
+         Write a js program to create a word-meaning dictionary of 5 words
+        */
+         let dictionary={
+               apple:"a fruit which keeps a doctor away",
+               ant: "an insect",
+               is:"verb which indicates present situation",
+               dessert:"a sweet dish eaten after a meal",
+               book:"object which provide knowledge about something"
+            }
+        for(var i in dictionary){
+            document.write(i+":"+dictionary[i]+"<br>");
+        }
+    </script>
+</body>
+</html>

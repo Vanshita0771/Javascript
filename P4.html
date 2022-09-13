@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*What will  the following print in JavaScript?
+        console.log("har\"".length);  */
+        console.log("har\"".length);
+        /*Explore the includes,startWith and endsWith functions of a string */
+        var a="Vanshita";
+        console.log(a.includes("an"));//returns boolean value
+        console.log(a.startsWith("V"));//returns boolean value
+        console.log(a.endsWith("q"));
+
+        /*Write a program to convert a given string to lowercase  */
+            a=a.toLowerCase();
+            console.log(a);
+
+        /* Extract the amount out of this string "Please give Rs1000" */
+        var n="Please give Rs1000";
+        var str="";
+        for(var i=0;i<n.length;i++){
+            if(n[i]<='9'&&n[i]>='0'){
+                str+=n[i];
+            }
+        }
+        console.log(str);
+
+        /*Try to change 4th character of a given string .Were you able to do it?*/
+        console.log(a.replace("s","n"));
+    </script>
+</body>
+</html>
