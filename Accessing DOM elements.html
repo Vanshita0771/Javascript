@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Accessing DOM Elements</h1>
+     <ul>
+        <li>document.getElementById()</li>
+        <li>document.getElementsByClassName()</li>
+        <li>document.getElementByTagName()</li>
+        <li>document.querySelector()</li>
+        <li>document.querySelectorAll()</li>
+     </ul>
+     <script>
+      //DOM represents the page content as HTML
+
+      //Root Node 
+      //Accessing the root of the HTML --- returns complete web page
+      console.log(document);
+
+      //Children
+      //Accessing the body---returns a document's <body> element
+      console.log(document.body);
+      //Accessing all the children node of body
+      console.log(document.body.childNodes);//returns node list of children nodes
+      //Accessing all the children elements of body
+      console.log(document.body.children);//returns HTML Collections of children Elements .HTML collections are not array
+      //Accessing the first node of the body
+      console.log(document.body.firstChild);//returns the text node
+      //Accessing the first Element of the body
+      console.log(document.body.firstElementChild);//returns <h1>Accessing DOM Elements</h1>
+      //Accessing the last node of the body
+      console.log(document.body.lastChild);//returns content of script tag
+      //Accessing the last Element of the body
+      console.log(document.body.lastElementChild);//returns content of script tag
+
+
+      //Siblings
+      //Accessing the body's 1st child 
+      console.log(document.body.children[0]);//return ul content
+      //Accessing next sibling of h1 as node
+      console.log(document.body.children[0].nextSibling);//return text node
+      //Accessing next sibling of h1 as Element
+      console.log(document.body.children[0].nextElementSibling);//return ul Element
+       //Previous sibling of ul
+       console.log(document.body.children[1].previousElementSibling);//returns h1 tag
+        //Next sibling of ul
+       console.log(document.body.children[1].nextElementSibling);//returns h1 tag
+       //Text content of script tag
+       console.log(document.body.lastElementChild.textContent);//returns content of script tag
+    </script>
+
+</body>
+</html>
