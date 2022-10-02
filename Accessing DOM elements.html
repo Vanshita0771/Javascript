@@ -7,17 +7,41 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Accessing DOM Elements</h1>
+    <h1 id="header">Accessing DOM Elements</h1>
      <ul>
-        <li>document.getElementById()</li>
-        <li>document.getElementsByClassName()</li>
-        <li>document.getElementByTagName()</li>
-        <li>document.querySelector()</li>
-        <li>document.querySelectorAll()</li>
+        <li class="list">document.getElementById()</li>
+        <li class="list">document.getElementsByClassName()</li>
+        <li class="list">document.getElementByTagName()</li>
+        <li class="list">document.querySelector()</li>
+        <li class="list">document.querySelectorAll()</li>
+        <li class="list">Other Targeting Methods for accessing DOM objects</li>
      </ul>
      <script>
       //DOM represents the page content as HTML
 
+
+      //Accessing through id
+      console.log(document.getElementById("header"));
+
+      //Accessing through class Name
+      //All Elements of list
+      console.log(document.getElementsByClassName("list"));
+      //1st element of list
+      console.log(document.getElementsByClassName("list")[0]);
+
+      //Accessing Elements through Tag Name
+      //All Elements of list
+      console.log(document.getElementsByTagName("li"));
+      //1st element of list
+      console.log(document.getElementsByTagName("li")[1]);
+
+      //Accessing Elements Through QuerySelector
+      console.log(document.querySelector(".list"));//selects only first element of class
+
+      //Accessing Elements Through QuerySelector
+      console.log(document.querySelectorAll(".list"));//selects all elements of class
+
+      //Other Targeting Methods for accessing DOM objects
       //Root Node 
       //Accessing the root of the HTML --- returns complete web page
       console.log(document);
@@ -52,6 +76,7 @@
        console.log(document.body.children[1].nextElementSibling);//returns h1 tag
        //Text content of script tag
        console.log(document.body.lastElementChild.textContent);//returns content of script tag
+
     </script>
 
 </body>
