@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <table BORDER="1" cellspacing="2">
+    <caption>Student Record</caption>
+    <thead>
+    <tr>
+       <th>Name</th>
+       <th>RollNo</th>
+    </tr>
+</thead>
+<tr>
+    <tbody>
+        <td>Prisha</td>
+    <td>2010990211</td>
+    </tr>
+    </tbody>
+    <tbody>
+    <tr>
+        <td>Vanshita</td>
+        <td>2010990771</td>
+    </tr>
+   </tbody>
+    <tfoot>
+    <tr>
+        <td>Manisha</td>
+        <td>2010990448</td>
+    </tr>
+    </tfoot>
+   </table>
+    <script>
+        //Table DOM Manipulation
+        const tableTag=document.body.lastElementChild.previousElementSibling;
+        console.log(tableTag.rows);//collection of tr elements
+        console.log(tableTag.caption);//reference to <caption>
+        console.log(tableTag.tHead);//reference to <thead>
+        console.log(tableTag.tFoot);//reference to <tfoot>
+        console.log(tableTag.tBodies);//collection of <tbody> elements
+        console.log(tableTag.rows);//collection of <tr> elements
+        console.log(tableTag.rows[0].cells);//collection of <tr> and <th> elements in row[0]
+        console.log(tableTag.rows[0].cells[0].textContent);//content of cell(tr/th) within row[0]
+    </script>
+</body>
+</html>
