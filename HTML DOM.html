@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <p id="para1" style="color:aqua;"> Hey!How are you?</p>
+     <p id="para2"> Hey!How are you?</p>
+
+    <script>
+        //Changing HTML content using DOM manipulation
+        //innerText lets you work with plain text whereas innerHTML lets you work with the HTML in a string.
+        document.getElementById("para1").innerHTML="<b>I am fine</b>";
+        document.getElementById("para2").innerText="<b>I am fine</b>";
+        //Changing the value of attribute 
+        document.getElementById("para1").style.color="pink";
+    </script>
+</body>
+</html>
