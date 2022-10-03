@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="intro">My name is Vanshita</p>
+<div id="edu" style="background-color:bisque;" data-primary="HAS" data-secondary="MPS">Currently persuading
+     BE CSE from Chitkara University</div>
+
+<script>
+let intro=document.getElementById("intro");
+let edu=document.getElementById("edu");
+let primary=document.createElement("h3");
+primary.innerHTML="Completed my primary education from Holy Angels School";
+//primary is appended within div
+edu.appendChild(primary);
+let secondary=document.createElement("h3");
+secondary.innerHTML="Completed my secondary education from Mukat Public School";
+//secondary is prepended within div
+edu.prepend(secondary);
+let ach12th=document.createElement("p");
+ach12th.innerHTML="Got 95% in 12th grade";
+//insert ach12th before primary within div
+primary.before(ach12th);
+let ach10th=document.createElement("p");
+ach10th.innerHTML="Got 90% in 10th grade";
+//insert ach10th after primary within div
+primary.after(ach10th);
+//replaceWith
+ach10th.replaceWith(intro);
+</script>
+</body>
+</html>
