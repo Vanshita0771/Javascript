@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="intro">My name is Vanshita</p>
+<p id="edu" style="background-color:bisque;" data-primary="HAS" data-secondary="MPS">Currently persuading BE CSE from Chitkara University</p>
+
+<script>
+let intro=document.getElementById("intro");
+let edu=document.getElementById("edu");
+//hasAttribute --returns true if present else false
+console.log(intro.hasAttribute("id"));
+//getAttribute()--returns the value of particular attribute
+console.log(intro.getAttribute("id"));
+//setAttribute()--sets the value of particular attribute
+console.log(intro.setAttribute("style","color:red;"));
+//removeAttribute()--remove the particular element
+console.log(edu.removeAttribute("style"));
+//dataset--returns the collection of custom attributes and its value
+console.log(edu.dataset);
+
+console.log(edu.dataset.primary);//returns the value of primary attribute
+
+</script>
+</body>
+</html>
