@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .first{
+            color:cornflowerblue;
+        }
+        .second{
+            background-color: chocolate;
+        }
+        .third{
+            margin:30px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="edu" >Hey !How are you?</div>
+
+<script>
+  let edu=document.getElementById("edu");
+  edu.className="first second";
+  //add class
+  edu.classList.add("third");
+  //remove class
+  edu.classList.remove("first");
+  //toggle
+  edu.classList.toggle("second");
+
+</script>
+</body>
+</html>
