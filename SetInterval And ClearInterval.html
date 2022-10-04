@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //The setInterval() method repeats a block of code at every given timing event
+        //The clearInterval() method in JavaScript clears the timer which has been set by a setInterval() method.
+        var i=0;
+        let IntervalId=setInterval(()=>{
+            var date=new Date();
+            var hrs=date.getHours();
+            var mins=Number.parseInt(date.getMinutes());
+            var sec=date.getSeconds();
+            document.getElementById("timer").innerHTML=hrs+":"+mins+":"+sec; 
+            i++;
+            console.log(date);
+            if(i==30)
+             clearInterval(IntervalId);
+         },2000);
+         
+    </script>
+</head>
+<body>
+    <p id="timer"></p>
+    
+</body>
+</html>
