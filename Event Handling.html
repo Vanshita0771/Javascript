@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Hello!How are you?</p>
+    <button onclick="addEle()">Click Me</button>
+    <script>
+       /* An HTML event can be something the browser does, or something a user does.
+         Here are some examples of HTML events:
+             An HTML web page has finished loading
+             An HTML input field was changed
+             An HTML button was clicked*/
+        let a=document.getElementsByTagName("p")[0];
+        let b=document.createElement("p");
+        let c=document.createElement("p");
+        let d=document.createElement("p");
+        function addEle(){
+            b.innerHTML="I am fine";
+            a.append(b);
+        }
+        let btn=document.getElementsByTagName("button")[0];
+        btn.onmouseover=()=>{
+            c.innerHTML="Hey";
+            a.prepend(c);
+        }
+        
+        btn.onmouseenter=()=>{
+            d.innerHTML="What's up";
+            a.after(d);
+        }
+        window.onload=()=>{
+            console.log("Hey");
+        }
+
+    </script>
+</body>
+</html>
