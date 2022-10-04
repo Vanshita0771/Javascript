@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //The setTimeout() method in JavaScript is used to execute a function after waiting for the specified time interval.It executes the function only once.
+        // This method returns a numeric value that represents the ID value of the timer.
+        // clearTimeout() method to stop the timeout or to prevent the execution of the function specified in the setTimeout() method. 
+        //The value returned by the setTimeout() method can be used as the argument of the clearTimeout() method to cancel the timer.
+        let a=21;
+        let b=23;
+        console.log("a:"+a);
+        console.log("b:"+b);
+       setTimeout(()=>{
+            let c=a+b;
+            document.write(c);
+        },5000);
+        function greet(name){
+           console.log("My name is"+name);
+        }
+        let TimeoutId=setTimeout(greet,4000,"Vanshita");
+        clearTimeout(TimeoutId);
+        console.log("Hey!How are you?");
+
+    </script>
+</body>
+</html>
